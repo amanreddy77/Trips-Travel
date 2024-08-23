@@ -1,57 +1,83 @@
-Trips & Travel Planner
-Welcome to the Trips & Travel Planner! This full-stack application allows users to plan trips, explore various destinations, and even find travel partners who have the same travel plans on specific dates.
+# Trips & Travel Planner
+A full-stack application where users can plan trips, visit places, and choose a travel partner if needed based on the same date plans.
 
-Features
-Trip Planning: Users can plan their trips, including selecting destinations, dates, and travel preferences.
-Travel Partner Matching: Users can find and connect with other travelers with similar plans on the same dates.
-Destination Exploration: Users can explore various destinations with detailed descriptions, photos, and reviews.
-User Authentication: Secure login and registration using JWT.
-Responsive Design: The application is fully responsive and optimized for all device sizes.
+## Watch Demo
 
-Tech Stack:
 
-Frontend
-React.js: A JavaScript library for building user interfaces.
-Tailwind CSS: A utility-first CSS framework for rapid UI development.
 
-Backend
-Node.js: A JavaScript runtime built on Chrome's V8 engine.
-Express.js: A minimal and flexible Node.js web application framework.
-MongoDB: A NoSQL database for storing user data, trip information, and reviews.
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Schema Diagram](#schema-diagram)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [License](#license)
 
-Other Technologies
-Mongoose: An ODM (Object Data Modeling) library for MongoDB and Node.js.
-JWT: JSON Web Tokens for secure authentication.
-CORS: Middleware to enable CORS (Cross-Origin Resource Sharing).
-dotenv: For managing environment variables.
-Installation
-Prerequisites
-Node.js (v14.x or higher)
-MongoDB (Local or Atlas)
-npm or yarn
-Clone the Repository
+## Project Overview
+The Trips & Travel Planner is a full-stack application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. The application allows users to plan trips, explore various destinations, and connect with travel partners who have similar plans on the same dates. It features user authentication, trip management, and a responsive design for a seamless user experience.
 
-git clone https://github.com/your-username/trips-travel-planner.git
-cd trips-travel-planner
+## Features
+- **User Authentication and Authorization** (JWT)
+- **User Profile Creation and Management**
+- **Trip Planning and Management**
+- **Destination Exploration**
+- **Travel Partner Matching**
+- **Commenting and Reviewing Trips**
+- **Liking Trips and Comments**
+- **Admin and Moderator Dashboards**
+- **Email Notifications for Trip Updates**
 
-npm install
-Create a .env file and configure the following environment variables:
+## Technologies
+- **Frontend**: React.js, Tailwind CSS
+- **Backend**: Node.js, Express.js, MongoDB
+- **Authentication**: JWT, Passport.js
+- **Email Notifications**: Nodemailer
+- **File Storage**: Azure Blob Storage
+- **Encryption**: Crypto-js
 
-PORT=3050
-MONGO_URL=your-mongodb-connection-string
-JWT_SECRET=your-jwt-secret
 
-Fork the repository.
-Create a new branch: git checkout -b feature-name.
-Make your changes and commit them: git commit -m 'Add some feature'.
-Push to the branch: git push origin feature-name.
-Open a pull request.
 
-License
+## Getting Started
+### Prerequisites
+Before running the application, ensure you have the following installed:
+- **Node.js**
+- **MongoDB** or a MongoDB Atlas account
+
+### Installation
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/your-username/trips-travel-planner.git
+    ```
+2. **Go to the project directory and install dependencies for both the client and server**
+    ```bash
+    cd client
+    npm install
+    cd ../server
+    npm install
+    ```
+3. **Create a `.env` file in both the client and server directories and add the environment variables as shown in the `.env.example` files.**
+
+4. **Start the server**
+    ```bash
+    cd server
+    npm start
+    ```
+5. **Start the client**
+    ```bash
+    cd client
+    npm start
+    ```
+
+### Configuration
+Run the `setup_tool.sh` script from the server directory with execution permissions. This script is used for configuring admin accounts, setting up initial destinations, and other settings.
+```bash
+./setup_tool.sh
+```
+
+### License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contact
-If you have any questions or suggestions, feel free to reach out.
-
-Email: reddyaman77.ar@gmail.com
-GitHub: amanreddy77
+### contact for help and suggestions
+[Email Me](mailto:reddyaman77.ar@gmail.com) 
+[github](amanreddy77)
